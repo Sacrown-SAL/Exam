@@ -3,7 +3,7 @@
 ## Student Submission Document
 
 - **Student Name**: Saheed Lawal
-- **Project**: Chatter Landing Page Implementation (Figma to HTML/CSS)
+- **Project**: Chatter Landing Page Implementation (Figma to HTML & CSS)
 - **Figma Design Reference**: [Figma Link](https://www.figma.com/design/TXzuoMAwGEIfWcAq0HbBNY/purposed?node-id=7-8&t=jNjEkb4uN89t0mLm-1)
 
 ---
@@ -18,7 +18,7 @@
 ---
 
 ### Project Deliverables Summary:
-- **Semantic HTML5**: Fully structured semantic layout with accessibility (ARIA, semantic landmarks, alt text).
-- **Modern Responsive CSS3**: Designed with DM Sans font, CSS variables, flexbox, grid, and media queries matching the Figma specifications across Desktop, Tablet, and Mobile.
-- **Vanilla JavaScript**: Interactive mobile navigation drawer, smooth scrolling, and accessible modal popups for Login and Sign Up.
+- **Pure HTML & CSS**: Fully implemented without any JavaScript, strictly adhering to the exam instructions.
+- **Semantic HTML5**: Fully structured semantic layout with accessibility (ARIA landmarks, semantic tags, alt text).
+- **Modern Responsive CSS3**: Designed with DM Sans font, CSS custom properties, flexbox, grid, and pure CSS responsive navigation matching the Figma specifications across Desktop, Tablet, and Mobile.
 - **Assets**: High-resolution imagery and crisp SVGs matching the Figma artboard.

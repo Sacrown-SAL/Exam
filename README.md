@@ -1,10 +1,10 @@
 # Chatter - A Haven for Text-Based Content
 
-A responsive, pixel-perfect web implementation of the Chatter landing page design from Figma, built for the **AI-Powered FullStack Karatu 2026 First Semester Project Exam**.
+A responsive, pixel-perfect web implementation of the Chatter landing page design from Figma, built strictly with **HTML and CSS** for the **AI-Powered FullStack Karatu 2026 First Semester Project Exam (30 Marks)**.
 
 ## 🚀 Live Demo & Repository
-- **Hosted Website**: [Live Link](#) <!-- Hosted URL -->
-- **GitHub Repository**: [GitHub Link](#) <!-- GitHub Repository URL -->
+- **Hosted Website**: [Live Link](#) <!-- Replace with your hosted link e.g. https://<username>.github.io/<repo-name>/ -->
+- **GitHub Repository**: [GitHub Link](#) <!-- Replace with your GitHub repository link -->
 
 ---
 
@@ -12,16 +12,16 @@ A responsive, pixel-perfect web implementation of the Chatter landing page desig
 Chatter is a multi-functional blogging and reading platform designed for authors and readers to connect, share ideas, and engage in thoughtful discussions.
 
 ### ✨ Key Features Implemented
-- **Pixel-Perfect Fidelity**: Matches the Figma design layout, typography (`DM Sans`), color palette (`#543EE0` primary, `#FFF5E5` warm sections), and spacing.
-- **Fully Responsive**: Fluid layout adapting seamlessly across Desktop (1200px+), Tablet (768px - 1024px), and Mobile (<768px).
-- **Navigation & Mobile Drawer**: Sticky header with hamburger navigation menu and smooth scrolling to sections.
-- **Hero Section**: High-resolution imagery with dark backdrop overlay, bold typography, and CTA.
-- **About Chatter**: Two-column layout showcasing platform values and high-quality imagery.
-- **Feature Cards**: Interactive 3-card grid (Analytics, Social Interactions, Content Creation) with custom SVG icons and subtle elevation hover effects.
+- **Pure HTML & CSS**: Built strictly adhering to the exam instructions with zero JavaScript dependencies.
+- **Pixel-Perfect Design**: Matches the Figma artboard layout, typography (`DM Sans`), color palette (`#543EE0` primary, `#FFF5E5` warm sections), and spacing.
+- **100% Responsive Layout**: Fluid design adapting across Desktop (1200px+), Tablet (768px - 1024px), and Mobile (<768px).
+- **Pure CSS Navigation**: Sticky header with pure CSS responsive hamburger navigation menu.
+- **Hero Section**: High-resolution imagery with dark backdrop overlay, bold typography, and CTA button.
+- **About Chatter**: Two-column layout showcasing platform values and high-quality imagery with rounded corners.
+- **Feature Cards**: 3-card grid (Analytics, Social Interactions, Content Creation) with custom SVG icons and subtle elevation hover effects.
 - **Testimonial Section**: Highlighting platform reviews with circular avatar styling and warm background contrast.
 - **Call-to-Action (CTA)**: Floating community avatar cluster with clear action triggers.
-- **Interactive Auth Modal**: Accessible modal popup for Login and Sign Up triggers.
-- **Semantic & Accessible HTML5**: Proper landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), ARIA attributes, and SEO metadata.
+- **Semantic & Accessible HTML5**: Proper landmarks (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`), ARIA labels, and SEO metadata.
 
 ---
 
@@ -35,10 +35,10 @@ Exam/
 │   ├── avatar-1.png
 │   ├── avatar-2.png
 │   └── avatar-3.png
-├── index.html
-├── styles.css
-├── script.js
-├── README.md
+├── index.html        # Semantic HTML5 markup
+├── styles.css        # Responsive CSS3 styling
+├── README.md         # Documentation
+├── SUBMISSION.md     # Exam submission document template
 └── .gitignore
 ```
 
@@ -46,18 +46,12 @@ Exam/
 
 ## 💻 Tech Stack
 - **HTML5**: Semantic tags, accessibility (WCAG compliant)
-- **CSS3**: Custom properties (variables), Flexbox, CSS Grid, Media Queries
-- **JavaScript (Vanilla)**: Clean, dependency-free interactivity
+- **CSS3**: Custom properties (variables), Flexbox, CSS Grid, Media Queries, transitions
 
 ---
 
 ## 🛠️ Local Development
-To run this project locally:
-1. Clone the repository:
-   ```bash
-   git clone <repo-url>
-   ```
-2. Open `index.html` in any browser or use a live server:
-   ```bash
-   npx serve .
-   ```
+To view this project locally, simply open `index.html` in any modern web browser or run:
+```bash
+npx serve .
+```

@@ -198,6 +198,10 @@ ul {
   display: none;
 }
 
+.nav-toggle {
+  display: none;
+}
+
 .hamburger {
   display: none;
   background: none;
@@ -576,118 +580,6 @@ ul {
 }
 
 /* ==========================================================================
-   AUTH MODAL
-   ========================================================================== */
-.modal {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 2000;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  padding: 1rem;
-}
-
-.modal.active {
-  display: flex;
-}
-
-.modal-backdrop {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(17, 24, 39, 0.6);
-  backdrop-filter: blur(4px);
-}
-
-.modal-dialog {
-  position: relative;
-  z-index: 2;
-  width: 100%;
-  max-width: 420px;
-  background-color: var(--bg-white);
-  border-radius: var(--radius-lg);
-  padding: 2.25rem;
-  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.2);
-  animation: modalFadeIn 0.25s ease-out;
-}
-
-@keyframes modalFadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-.modal-close {
-  position: absolute;
-  top: 1.25rem;
-  right: 1.25rem;
-  background: none;
-  border: none;
-  font-size: 1.6rem;
-  color: var(--text-muted);
-  cursor: pointer;
-  line-height: 1;
-  transition: var(--transition);
-}
-
-.modal-close:hover {
-  color: var(--text-dark);
-}
-
-.modal-body h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--text-dark);
-  margin-bottom: 0.5rem;
-}
-
-.modal-body p {
-  font-size: 0.95rem;
-  color: var(--text-muted);
-  margin-bottom: 1.75rem;
-}
-
-.form-group {
-  margin-bottom: 1.25rem;
-}
-
-.form-group label {
-  display: block;
-  font-size: 0.88rem;
-  font-weight: 600;
-  color: var(--text-dark);
-  margin-bottom: 0.4rem;
-}
-
-.form-group input {
-  width: 100%;
-  padding: 0.75rem 1rem;
-  border: 1px solid var(--border-light);
-  border-radius: var(--radius-md);
-  font-family: var(--font-family);
-  font-size: 0.95rem;
-  color: var(--text-dark);
-  transition: var(--transition);
-}
-
-.form-group input:focus {
-  outline: none;
-  border-color: var(--primary);
-  box-shadow: 0 0 0 3px rgba(84, 62, 224, 0.15);
-}
-
-/* ==========================================================================
    RESPONSIVE MEDIA QUERIES
    ========================================================================== */
 
@@ -758,7 +650,7 @@ ul {
     z-index: 999;
   }
 
-  .nav-menu.open {
+  .nav-toggle:checked ~ .nav-menu {
     transform: translateY(0);
   }
 
@@ -790,15 +682,15 @@ ul {
     display: flex;
   }
 
-  .hamburger.active .bar:nth-child(1) {
+  .nav-toggle:checked ~ .nav-actions .hamburger .bar:nth-child(1) {
     transform: translateY(7px) rotate(45deg);
   }
 
-  .hamburger.active .bar:nth-child(2) {
+  .nav-toggle:checked ~ .nav-actions .hamburger .bar:nth-child(2) {
     opacity: 0;
   }
 
-  .hamburger.active .bar:nth-child(3) {
+  .nav-toggle:checked ~ .nav-actions .hamburger .bar:nth-child(3) {
     transform: translateY(-7px) rotate(-45deg);
   }
 
@@ -821,3 +713,4 @@ ul {
     gap: 2rem;
   }
 }
+

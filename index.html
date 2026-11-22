@@ -21,7 +21,10 @@
     <div class="container header-container">
       <a href="#home" class="logo" aria-label="Chatter Home">CHATTER</a>
 
-      <nav class="nav-menu" id="navMenu" aria-label="Main Navigation">
+      <!-- Pure CSS Mobile Menu Toggle -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" />
+
+      <nav class="nav-menu" aria-label="Main Navigation">
         <ul class="nav-list">
           <li><a href="#home" class="nav-link active">Home</a></li>
           <li><a href="#about" class="nav-link">About us</a></li>
@@ -29,19 +32,19 @@
           <li><a href="#blogs" class="nav-link">Blogs</a></li>
         </ul>
         <div class="nav-actions-mobile">
-          <a href="#login" class="btn btn-outline" id="mobileLoginBtn">Log in</a>
-          <a href="#signup" class="btn btn-primary" id="mobileSignupBtn">Sign up</a>
+          <a href="#login" class="btn btn-outline">Log in</a>
+          <a href="#signup" class="btn btn-primary">Sign up</a>
         </div>
       </nav>
 
       <div class="nav-actions">
-        <a href="#login" class="btn btn-outline" id="loginBtn">Log in</a>
-        <a href="#signup" class="btn btn-primary" id="signupBtn">Sign up</a>
-        <button class="hamburger" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+        <a href="#login" class="btn btn-outline">Log in</a>
+        <a href="#signup" class="btn btn-primary">Sign up</a>
+        <label for="nav-toggle" class="hamburger" aria-label="Toggle navigation menu">
           <span class="bar"></span>
           <span class="bar"></span>
           <span class="bar"></span>
-        </button>
+        </label>
       </div>
     </div>
   </header>
@@ -224,29 +227,6 @@
     </div>
   </footer>
 
-  <!-- MODAL / TOAST NOTIFICATION CONTAINER -->
-  <div class="modal" id="authModal" aria-hidden="true" role="dialog">
-    <div class="modal-backdrop" id="modalBackdrop"></div>
-    <div class="modal-dialog">
-      <button class="modal-close" id="modalCloseBtn" aria-label="Close modal">&times;</button>
-      <div class="modal-body">
-        <h3 id="modalTitle">Welcome to Chatter</h3>
-        <p id="modalDesc">Join our vibrant community of writers and readers today.</p>
-        <form id="authForm" class="auth-form" onsubmit="event.preventDefault(); alert('Welcome to Chatter!'); closeModal();">
-          <div class="form-group">
-            <label for="emailInput">Email address</label>
-            <input type="email" id="emailInput" placeholder="you@example.com" required />
-          </div>
-          <div class="form-group">
-            <label for="passwordInput">Password</label>
-            <input type="password" id="passwordInput" placeholder="••••••••" required />
-          </div>
-          <button type="submit" class="btn btn-primary btn-block" id="modalSubmitBtn">Continue</button>
-        </form>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
 </body>
 </html>
+
