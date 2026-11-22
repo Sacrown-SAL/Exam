@@ -1,0 +1,6 @@
+# Temporary & Scraping files
+figma_thumbnail.png
+exam_doc.pdf
+*.log
+.DS_Store
+Thumbs.db
